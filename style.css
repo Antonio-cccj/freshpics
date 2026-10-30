@@ -1,0 +1,19 @@
+/* 支持页与隐私政策共用样式：系统字体、窄栏阅读、自动适配深色模式 */
+:root { color-scheme: light dark; --accent: #0999b0; }
+body {
+  margin: 0;
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  background: Canvas;
+  color: CanvasText;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+a { color: var(--accent); }
+nav { margin: 8px 0 24px; font-size: 14px; }
+h1 { font-size: 28px; margin: 16px 0 4px; }
+h2 { font-size: 20px; margin-top: 32px; }
+h3 { font-size: 16px; margin: 20px 0 4px; }
+.meta { color: GrayText; font-size: 14px; }
+hr { border: 0; border-top: 1px solid color-mix(in srgb, CanvasText 15%, transparent); margin: 48px 0; }
+.hero { text-align: center; }
+.hero img { border-radius: 22%; box-shadow: 0 4px 16px rgb(0 0 0 / 15%); }
+.hero p { color: GrayText; }

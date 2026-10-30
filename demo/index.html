@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- 审核员 / 测试者用的演示图片页。图片由 tools/mac/make_test_photos.swift 生成（英文版），内容均为虚构。
+     票据上的日期已经过去，截图后无需等待即可被识别为“已过期”。 -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhotoSweep Demo Images</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+    .grid img { width: 100%; border-radius: 12px; border: 1px solid color-mix(in srgb, CanvasText 15%, transparent); }
+    figcaption { font-size: 13px; color: GrayText; text-align: center; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Demo images for testing</h1>
+  <p>All content below is fictional. Dates on the boarding pass, coupon and movie ticket are already in the past.</p>
+  <ol>
+    <li>Open this page in Safari on the iPhone and tap an image to view it full screen.</li>
+    <li>Take a screenshot (side button + volume up) of the <b>boarding pass</b>, <b>coupon</b> and <b>movie ticket</b>.
+        Also take one of the <b>passport</b> to see that ID documents are never recommended.</li>
+    <li>Open PhotoSweep and tap <b>Scan Again</b>. The screenshots appear under <b>Expired Info</b>, each with a reason.</li>
+  </ol>
+  <p>Pickup codes, verification codes, delivery orders and payment pages are recognized too,
+     but they are only considered expired a few days after the screenshot is taken.</p>
+  <div class="grid">
+    <figure><a href="ticket.jpg"><img src="ticket.jpg" alt="Boarding pass"></a><figcaption>Boarding pass</figcaption></figure>
+    <figure><a href="coupon.jpg"><img src="coupon.jpg" alt="Coupon"></a><figcaption>Coupon</figcaption></figure>
+    <figure><a href="movie.jpg"><img src="movie.jpg" alt="Movie ticket"></a><figcaption>Movie ticket</figcaption></figure>
+    <figure><a href="idcard.jpg"><img src="idcard.jpg" alt="Passport (protected)"></a><figcaption>Passport (protected)</figcaption></figure>
+    <figure><a href="pickup.jpg"><img src="pickup.jpg" alt="Pickup code"></a><figcaption>Pickup code</figcaption></figure>
+    <figure><a href="verify.jpg"><img src="verify.jpg" alt="Verification code"></a><figcaption>Verification code</figcaption></figure>
+    <figure><a href="food.jpg"><img src="food.jpg" alt="Delivery order"></a><figcaption>Delivery order</figcaption></figure>
+    <figure><a href="payment.jpg"><img src="payment.jpg" alt="Payment"></a><figcaption>Payment</figcaption></figure>
+    <figure><a href="groupqr.jpg"><img src="groupqr.jpg" alt="Group invite"></a><figcaption>Group invite</figcaption></figure>
+  </div>
+</main>
+</body>
+</html>
